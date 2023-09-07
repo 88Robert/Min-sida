@@ -166,7 +166,7 @@ footer {
 
 /* Bakgrund style*/
 
-#bild3 {
+.bild3 {
     width: 200px;
     height: 270px;
     margin-left: 120px;
@@ -177,7 +177,7 @@ footer {
 
 }
 
-#bild4 {
+.bild4 {
     width: 200px;
     height: 270px;
     opacity: 90%;
