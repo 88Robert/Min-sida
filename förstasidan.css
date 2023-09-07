@@ -198,3 +198,33 @@ footer {
 /* Bakgrund style*/
 
 
+/* Familj Style */
+
+#bild5 {
+    width: 350px;
+    height: 370px;
+    opacity: 80%;
+    margin-top: 7%;
+    margin-left: 8%;
+}
+
+.text3 {
+    width: 700px;
+    height: 330px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border: solid black;
+    background-color: rgb(107, 107, 105);
+    opacity: 80%;
+    float: right;
+    margin-top: 7%;
+    margin-right: 6%;
+
+}
+
+ul {
+    font-family:"Audiowide", sans-serif;
+    color: rgb(139, 244, 244);
+    font-size: larger;
+}
