@@ -30,6 +30,9 @@ a {
     color:  rgb(139, 244, 244);    
     margin-left: 20px;
 }
+a:hover {
+    color: black;
+}
 /*headerstyle med bild,länk och text*/
 
 
@@ -87,6 +90,9 @@ h2 {
     top: 25%;
     background-color: rgb(107, 107, 105);
     opacity: 80%;
+}
+.link1:hover {
+    color: black;
 }
 
 .förstatext {
@@ -220,6 +226,8 @@ footer {
     float: right;
     margin-top: 7%;
     margin-right: 6%;
+    padding-left: 4px;
+    padding-right: 4px;
 
 }
 
