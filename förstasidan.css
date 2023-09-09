@@ -117,50 +117,27 @@ h2 {
 
 /*kontakta mig, style*/
 
-p {
+#kontakt {
+    border-radius: 5px;
+    border: solid black;
+    background-color: rgb(107, 107, 105);
+    opacity: 80%;
+    width: 400px;
+    height: 450px;
+    padding-left: 100px;
+    padding-top: 10px;
+    margin-top: 3%;
+    margin-left: 35%    ;
+}
+
+label {
     font-family:"Audiowide", sans-serif;
     color: rgb(139, 244, 244);
     font-size: larger;
 
 }
 
-#kontakt {
-    font-family: "Audiowide", sans-serif;
-    text-align: center;
-    border-radius: 5px;
-    border: solid black;
-    background-color: rgb(107, 107, 105);
-    opacity: 80%;
-    width: 200px;
-    height: 300px;
-    font-size: larger;
-    position: relative;
-    left: 40%;
 
-
-    
-}
-
-#tele {
-    font-family: "Audiowide", sans-serif;
-    color: blue;
-
-}
-
-.linkmail {
-    font-family: "Audiowide", sans-serif;
-    color: rgb(139, 244, 244);
-    text-align: center;
-
-}
-
-
-
-footer {
-    border: solid black;
-    background-color: rgb(137, 136, 136);
-    opacity: 80%;
-}
 
 
 /* Bakgrund style*/
@@ -183,6 +160,13 @@ footer {
     border-radius: 30px;
     position: relative;
     top: 158px;
+
+}
+
+p {
+    font-family:"Audiowide", sans-serif;
+    color: rgb(139, 244, 244);
+    font-size: larger;
 
 }
 
