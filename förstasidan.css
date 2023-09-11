@@ -5,10 +5,12 @@
 }
 
 /*headerstyle med bild, länk och text*/
-header {
+.gränser {
     border: solid black;
     background-color: rgb(137, 136, 136);
     opacity: 80%;
+    height: 105px;
+    width: 100%;
 }
 
 #bild1 {
@@ -28,10 +30,14 @@ h1 {
 a {
     font-family: "Audiowide", sans-serif;
     color:  rgb(139, 244, 244);    
-    margin-left: 20px;
 }
 a:hover {
     color: black;
+}
+
+nav {
+    margin-top: 1%;
+    margin-left: 2%;
 }
 /*headerstyle med bild,länk och text*/
 
@@ -43,6 +49,7 @@ body {
     background-image: url(Bilder/background_header.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
     
 }
 
