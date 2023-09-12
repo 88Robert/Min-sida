@@ -4,23 +4,29 @@
     padding-bottom: 10px;
 }
 
-/*headerstyle med bild, länk och text*/
-.gränser {
+.container {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-areas: 
+    "header header header"
+    "left main right"
+    "footer footer footer";
+}
+
+.header {
+    grid-area: header;
     border: solid black;
     background-color: rgb(137, 136, 136);
     opacity: 80%;
-    height: 105px;
-    width: 100%;
-    position: fixed;
 
 }
 
 #bild1 {
-    width: 100px;
+    width: 80px;
     height: 100px;
     float: right;
     margin-right: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
     border-radius: 20px;
 
 }
@@ -56,17 +62,11 @@ body {
     
 }
 
-h2 {
-    font-family: "Audiowide", sans-serif;
-    color: rgb(139, 244, 244);
-    border-radius: 5px;
-    border: solid black;
-    background-color: rgb(107, 107, 105);
-    opacity: 80%;
-    width: 200px;
-    position: fixed;
-    top: 20%;
-    left: 10%;
+.left {
+    grid-area: left;
+    position: relative;
+    left: 25%;
+    top: 40%;
 }
 
 .bild2 {
@@ -74,12 +74,16 @@ h2 {
     height: 270px;
     opacity: 90%;
     border-radius: 30px;
-    position: fixed;
-    top: 32%;
-    left: 10%;
-
-    
 }
+
+.main {
+    grid-area: main;
+    list-style-type: none;
+    position: relative;
+    top: 40%;
+    left: 15%;
+}
+
 
 .link1 {
     font-family:"Audiowide", sans-serif;
@@ -98,15 +102,14 @@ h2 {
 }
 
 .lista1 {
-    position: fixed;
-    left: 40%;
-    top: 35%;
-    list-style-type: none;
+    list-style: none;
+    
+}
+
     
 
-}   
-
-.förstatext {
+.right {
+    grid-area: right;
     font-family: "Audiowide", sans-serif;
     color: rgb(139, 244, 244);
     font-size: larger;
@@ -118,16 +121,18 @@ h2 {
     border: solid black;
     background-color: rgb(107, 107, 105);
     opacity: 80%;
-    position: fixed;
-    left: 70%;
-    bottom: 30%;
+    position: relative;
+    top: 40%;
+    left: 20%;
+
 
 }
 
 
 /*kontakta mig, style*/
 
-#kontakt {
+.main2 {
+    grid-area: main;
     border-radius: 5px;
     border: solid black;
     background-color: rgb(107, 107, 105);
@@ -136,9 +141,10 @@ h2 {
     height: 420px;
     padding-left: 100px;
     padding-top: 10px;
-    position: absolute;
-    top: 20%;
-    left: 35%;
+    position: relative;
+    top: 8%;
+
+
 
 }
 
@@ -148,6 +154,7 @@ label {
     font-size: larger;
 
 }
+
 
 
 
@@ -237,13 +244,29 @@ p {
 }
 
 
-.gränser1 {
+/* footer layout */
+
+.footer {
+  
     border: solid black;
     background-color: rgb(137, 136, 136);
     opacity: 80%;
     height: 105px;
     width: 100%;
     position: fixed;
-    top: 86%;
-
+    bottom: 0;
 }
+
+
+
+#footer {
+    font-family:"Audiowide", sans-serif;
+    color: rgb(139, 244, 244);
+    font-size: smaller;
+    float: right;
+    padding-right: 10px;
+    padding-top: 20px;
+    
+}
+
+/* footer layout */
