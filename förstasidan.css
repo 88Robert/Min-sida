@@ -161,6 +161,14 @@ label {
 
 /* Bakgrund style*/
 
+.left2 {
+
+    grid-area: left;
+    position: relative;
+    top: 35%;
+
+}
+
 .bild3 {
     width: 200px;
     height: 270px;
@@ -168,8 +176,7 @@ label {
     opacity: 90%;
     border-radius: 30px;
     position: relative;
-    top: 158px;
-
+    
 }
 
 .bild4 {
@@ -178,7 +185,6 @@ label {
     opacity: 90%;
     border-radius: 30px;
     position: relative;
-    top: 158px;
 
 }
 
@@ -189,19 +195,21 @@ p {
 
 }
 
-.text2 {
-    width: 700px;
+.right2 {
+    grid-area: right;
+    width: 500px;
     height: 330px;
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 5px;
     padding-left: 5px;
+    padding-right: 5px;
     border: solid black;
     background-color: rgb(107, 107, 105);
     opacity: 80%;
     position: relative;
-    left: 46%;
-    bottom: 110px;
+    top: 25%;
+    right: 10%;
 }
 
 /* Bakgrund style*/
@@ -209,30 +217,17 @@ p {
 
 /* Familj Style */
 
-#bild5 {
-    width: 350px;
-    height: 370px;
-    opacity: 80%;
-    position: absolute;
-    top: 25%;
-    left: 10%;
+.left3 {
+    grid-area: left;
+    position: relative;
+    top: 20%;
+    left: 20%;
 }
 
-.text3 {
-    width: 700px;
-    height: 330px;
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    border: solid black;
-    background-color: rgb(107, 107, 105);
+#bild5 {
+    width: 400px;
+    height: 370px;
     opacity: 80%;
-    float: right;
-    position: absolute;
-    top: 25%;
-    left: 48%;
-    padding-left: 4px;
-    padding-right: 4px;
 
 }
 
