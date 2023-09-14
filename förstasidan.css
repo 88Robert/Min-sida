@@ -200,21 +200,21 @@ body {
     .main {
         grid-area: left;
         top: 0;
-        left: 0;
+        left: -5em;
     }
 
-    .footer {
-        position: fixed;
-    }
  
         
-    }
+    
     .bild2 {
         width: 100%;
         height: auto;
 
     }
 
+    .footer {
+        position: static;
+    }
 }
 
 
