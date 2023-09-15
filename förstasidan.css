@@ -168,58 +168,6 @@ body {
 
 /* footer layout */
 
-@media screen and (max-width: 850px) {
-
-    .container {
-        grid-template-columns: 33% 33% 33%;
-        grid-template-areas: 
-        "header header header"
-        ". main ."
-        ". right ."
-        ". left ."
-        "footer footer footer";
-    }
-
-    .left {
-        grid-area: main;
-        left: 0;
-        top: 0;
-        margin-top: 8vh;
-
-    }
-
-    .right {
-        width: 200px;
-        height: 320px;
-        top: 0;
-        left: 0;
-        margin-top: 3vh;
-           
-    }
-
-    .main {
-        grid-area: left;
-        top: 0;
-        left: -5em;
-    }
-
- 
-        
-    
-    .bild2 {
-        width: 100%;
-        height: auto;
-
-    }
-
-    .footer {
-        position: static;
-    }
-}
-
-
-
-/*kontakta mig, style*/
 
 .main2 {
     grid-area: main;
@@ -304,6 +252,27 @@ p {
     
 }
 
+.text3 {
+    grid-area: right;
+    width: 500px;
+    height: 330px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid black;
+    background-color: rgb(107, 107, 105);
+    opacity: 80%;
+    position: relative;
+    top: 25%;
+    right: 10%;
+    overflow-x: scroll;
+
+}
+
+
+
 /* Bakgrund style*/
 
 
@@ -331,3 +300,111 @@ p {
 }
 
 
+
+
+@media all and (max-width: 600px) {
+
+    .container {
+        grid-template-columns: 25% 50% 25%;
+        grid-template-areas: 
+        "header header header"
+        ". main ."
+        ". right ."
+        ". left ."
+        "footer footer footer";
+    }
+
+    .left {
+        grid-area: main;
+        left: 0;
+        top: 0;
+        margin-top: 8vh;
+
+    }
+
+    .right {
+        width: 200px;
+        height: 320px;
+        top: 0;
+        left: 0;
+        margin-top: 3vh;
+           
+    }
+
+    .main {
+        grid-area: left;
+        top: 0;
+        left: -1em;
+    }
+
+    
+    .bild2 {
+        width: 100%;
+        height: auto;
+
+    }
+    
+    .main2 {
+        grid-area: main;
+        top: 15vh;
+        left: -1em;
+        width: 250px;
+        padding-left: -8em;
+
+    } 
+
+    .label {
+        padding-left: -8em;
+    }
+
+    
+    .altbild3 {
+        grid-area: main;
+    }
+    
+    .left2 {
+        grid-area: main;
+        position: relative;
+        top: 8vh;
+    }
+
+    .bild3 {
+        margin-left: -1%;
+    }
+
+    .bild4 {
+        top: 3vh;
+    }
+
+    .right2 {
+        position: relative;
+        grid-area: right;
+        margin-left: -2em;
+        width: 320px;
+        height: 700px;
+
+    }
+
+    .left3 {
+        grid-area: main;
+        left: -3em;
+    
+    }
+    #bild5 {
+        width: 300px;
+    }
+
+    .text3 {
+        position: relative;
+        grid-area: right;
+        margin-left: -2em;
+        width: 320px;
+        height: 500px;
+    }
+
+
+    .footer {
+        position: static;
+    
+    }
+}
