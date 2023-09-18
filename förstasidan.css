@@ -248,7 +248,7 @@ p {
     position: relative;
     top: 25%;
     right: 10%;
-    overflow-x: scroll;
+    overflow: scroll;
     
 }
 
@@ -267,7 +267,7 @@ p {
     position: relative;
     top: 25%;
     right: 10%;
-    overflow-x: scroll;
+    overflow: scroll;
 
 }
 
@@ -302,7 +302,7 @@ p {
 
 
 
-@media all and (max-width: 600px) {
+@media only screen and (min-width: 200px) and (max-width: 767px) {
 
     .container {
         grid-template-columns: 25% 50% 25%;
@@ -340,18 +340,17 @@ p {
     
     .bild2 {
         width: 100%;
-        height: auto;
+        height: 300px;
 
     }
     
     .main2 {
         grid-area: main;
         top: 15vh;
-        left: -1em;
-        width: 250px;
-        padding-left: -8em;
+        left: -3em;
+        width: 300px;
 
-    } 
+    }
 
     .label {
         padding-left: -8em;
@@ -404,7 +403,62 @@ p {
 
 
     .footer {
+        grid-area: footer;
         position: static;
+        margin-top: 23vh;
     
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .right {
+        top: 15vh;
+        left: -2vw;
+        
+    }
+    .main {
+        top: 10vh;
+        left: 0;
+    }
+    .left {
+        top: 14vh;
+        left: 8vw;
+    }
+    .main2 {
+        top: 10vh;
+        left: -2em;
+    }
+    .left2 {
+        top: 0;
+        left: 2vw;
+    }
+    .bild3 {
+        width: 150px;
+        left: -10vw;
+        top: 16vh;
+    }
+    .bild4 {
+        width: 150px;
+        left: 22vw;
+        bottom: 16vh;
+    }
+    .right2 {
+        width: 350px;
+        top: 16vh;
+        right: 10vw;
+    }
+    .left3 {
+        top: 16vh;
+        right: 0;
+    }
+    #bild5 {
+        width: 320px;
+    }
+    .text3 {
+        top: 16vh;
+        right: 7vw;
+        width: 300px;
+        height: 360px;
     }
 }
