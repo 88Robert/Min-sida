@@ -17,7 +17,7 @@
 
 /* Har gått efter samma container i alla html filer. */
 
-/* Övergripande header som används i varje htmil fil, skapat en id klass
+/* Övergripande header, skapat en id klass
 på bild 1 av den anledning att den används endast en gång. */ 
 .header {
     grid-area: header;
@@ -27,6 +27,7 @@ på bild 1 av den anledning att den används endast en gång. */
     width: 100%;
 
 }
+
 
 #bild1 {
     width: 80px;
@@ -54,7 +55,7 @@ nav {
     margin-top: 1%;
     margin-left: 2%;
 }
-/* Övergripande header som används i varje htmil fil, skapat en id klass
+/* Övergripande header, skapat en id klass
 på bild 1 av den anledning att den används endast en gång. */ 
 
 
@@ -72,7 +73,7 @@ body {
     
 }
 
-.left {
+.profilbild {
     grid-area: left;
     position: relative;
     left: 25%;
@@ -120,7 +121,7 @@ body {
 
     
 
-.right {
+.introtext {
     grid-area: right;
     font-family: "Audiowide", sans-serif;
     color: rgb(139, 244, 244);
@@ -169,7 +170,7 @@ body {
 /* footer layout */
 
 
-.main2 {
+.formulär {
     grid-area: main;
     border-radius: 5px;
     border: solid black;
@@ -181,8 +182,6 @@ body {
     padding-top: 10px;
     position: relative;
     top: 8%;
-
-
 
 }
 
@@ -233,7 +232,7 @@ p {
 
 }
 
-.right2 {
+.text2 {
     grid-area: right;
     width: 500px;
     height: 330px;
@@ -300,7 +299,7 @@ p {
 }
 
 
-
+/* Responsivitet för mobil */
 
 @media only screen and (min-width: 200px) and (max-width: 767px) {
 
@@ -314,7 +313,7 @@ p {
         "footer footer footer";
     }
 
-    .left {
+    .profilbild {
         grid-area: main;
         left: 0;
         top: 0;
@@ -322,7 +321,7 @@ p {
 
     }
 
-    .right {
+    .introtext {
         width: 200px;
         height: 320px;
         top: 0;
@@ -344,7 +343,7 @@ p {
 
     }
     
-    .main2 {
+    .formulär {
         grid-area: main;
         top: 15vh;
         left: -3em;
@@ -356,11 +355,6 @@ p {
         padding-left: -8em;
     }
 
-    
-    .altbild3 {
-        grid-area: main;
-    }
-    
     .left2 {
         grid-area: main;
         position: relative;
@@ -375,7 +369,7 @@ p {
         top: 3vh;
     }
 
-    .right2 {
+    .text2 {
         position: relative;
         grid-area: right;
         margin-left: -2em;
@@ -412,7 +406,7 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-    .right {
+    .introtext {
         top: 15vh;
         left: -2vw;
         
@@ -421,11 +415,11 @@ p {
         top: 10vh;
         left: 0;
     }
-    .left {
+    .profilbild {
         top: 14vh;
         left: 8vw;
     }
-    .main2 {
+    .formulär {
         top: 10vh;
         left: -2em;
     }
@@ -443,7 +437,7 @@ p {
         left: 22vw;
         bottom: 16vh;
     }
-    .right2 {
+    .text2 {
         width: 350px;
         top: 16vh;
         right: 10vw;
