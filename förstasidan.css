@@ -24,9 +24,7 @@ på bild 1 av den anledning att den används endast en gång. */
     background-color: rgb(137, 136, 136);
     opacity: 80%;
     width: 100%;
-
 }
-
 
 #bild1 {
     width: 80px;
@@ -35,8 +33,8 @@ på bild 1 av den anledning att den används endast en gång. */
     margin-right: 20px;
     margin-top: 10px;
     border-radius: 20px;
-
 }
+
 h1 {
     font-family: "Audiowide", sans-serif;
     color:  rgb(139, 244, 244);
@@ -54,12 +52,6 @@ nav {
     margin-top: 1%;
     margin-left: 2%;
 }
-/* Övergripande header, skapat en id klass
-på bild 1 av den anledning att den används endast en gång. */ 
-
-
-/*mainstyle med justering av bild på mig, justering av text.*/
-
 
 body {
     background-image: url(Bilder/background_header.webp);
@@ -68,8 +60,27 @@ body {
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
+    width: 100%;    
+}
+
+.footer {
+    grid-area: footer;
+    border: solid black;
+    background-color: rgb(137, 136, 136);
+    opacity: 80%;
+    height: 105px;
     width: 100%;
-    
+    bottom: 0;
+    position: fixed;
+}
+
+#footer {
+    font-family:"Audiowide", sans-serif;
+    color: rgb(139, 244, 244);
+    font-size: smaller;
+    float: right;
+    padding-right: 10px;
+    padding-top: 20px;   
 }
 
 .profilbild {
@@ -78,7 +89,6 @@ body {
     left: 25%;
     top: 40%;
 }
-
 
 .bild2 {
     width: 200px;
@@ -95,7 +105,6 @@ body {
     left: 15%;
 }
 
-
 .link1 {
     font-family:"Audiowide", sans-serif;
     color: rgb(139, 244, 244);
@@ -106,19 +115,16 @@ body {
     opacity: 80%;
     width: 150px;
     text-align: center;
-    margin-top: 40px;
-    
+    margin-top: 40px;    
 }
+
 .link1:hover {
     color: black;
 }
 
 .lista1 {
-    list-style: none;
-    
+    list-style: none;    
 }
-
-    
 
 .introtext {
     grid-area: right;
@@ -136,38 +142,7 @@ body {
     position: relative;
     top: 40%;
     left: 20%;
-
-
 }
-
-/* footer layout */
-
-.footer {
-  
-    grid-area: footer;
-    border: solid black;
-    background-color: rgb(137, 136, 136);
-    opacity: 80%;
-    height: 105px;
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-}
-
-
-
-#footer {
-    font-family:"Audiowide", sans-serif;
-    color: rgb(139, 244, 244);
-    font-size: smaller;
-    float: right;
-    padding-right: 10px;
-    padding-top: 20px;
-    
-}
-
-/* footer layout */
-
 
 .formulär {
     grid-area: main;
@@ -187,21 +162,13 @@ label {
     font-family:"Audiowide", sans-serif;
     color: rgb(139, 244, 244);
     font-size: larger;
-
 }
 
-
-
-
-
-/* Bakgrund style*/
-
 .bilder {
-
     grid-area: left;
-    position: relative;
-    top: 35%;
-
+    display: flex;
+    margin-top: 16vh;
+    gap: 20px;
 }
 
 .bild3 {
@@ -210,8 +177,7 @@ label {
     margin-left: 120px;
     opacity: 90%;
     border-radius: 30px;
-    position: relative;
-    
+    position: relative;    
 }
 
 .bild4 {
@@ -220,14 +186,12 @@ label {
     opacity: 90%;
     border-radius: 30px;
     position: relative;
-
 }
 
 p {
     font-family:"Audiowide", sans-serif;
     color: rgb(139, 244, 244);
     font-size: larger;
-
 }
 
 .text2 {
@@ -245,8 +209,7 @@ p {
     position: relative;
     top: 25%;
     right: 10%;
-    overflow: scroll;
-    
+    overflow: scroll;    
 }
 
 .text3 {
@@ -265,15 +228,7 @@ p {
     top: 25%;
     right: 10%;
     overflow: scroll;
-
 }
-
-
-
-/* Bakgrund style*/
-
-
-/* Familj Style */
 
 .familj {
     grid-area: left;
@@ -286,7 +241,6 @@ p {
     width: 400px;
     height: 370px;
     opacity: 80%;
-
 }
 
 .lista2 {
@@ -297,7 +251,7 @@ p {
 }
 
 
-/* Responsivitet för mobil */
+/* Responsivitet för mobil (iphone 12 pro) */
 
 @media only screen and (min-width: 200px) and (max-width: 767px) {
 
@@ -316,7 +270,6 @@ p {
         left: 0;
         top: 0;
         margin-top: 8vh;
-
     }
 
     .introtext {
@@ -324,8 +277,7 @@ p {
         height: 320px;
         top: 0;
         left: 0;
-        margin-top: 3vh;
-           
+        margin-top: 3vh;       
     }
 
     .main {
@@ -346,41 +298,43 @@ p {
         top: 15vh;
         left: -3em;
         width: 300px;
-
     }
 
     .label {
         padding-left: -8em;
     }
 
+    /* Medvetet att bilderna är mindre. */
     .bilder {
         grid-area: main;
-        position: relative;
-        top: 8vh;
+        display: block;
+        margin-top: 2vh;
+        gap: 20px;
+        
     }
 
     .bild3 {
-        margin-left: -1%;
+        margin-left: 1%;
     }
-
+    
     .bild4 {
         top: 3vh;
     }
 
+    
     .text2 {
         position: relative;
         grid-area: right;
         margin-left: -9vw;
         width: 320px;
         height: 700px;
-
     }
 
     .familj {
         grid-area: main;
         left: -3em;
-    
     }
+
     #bild5 {
         width: 300px;
     }
@@ -398,55 +352,63 @@ p {
         grid-area: footer;
         position: static;
         margin-top: 23vh;
-    
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Responsivitet för surfplatta (ipad air) */
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
 
     .introtext {
         top: 15vh;
-        left: -2vw;
-        
+        left: -2vw;    
     }
+
     .main {
-        top: 10vh;
+        top: 11vh;
         left: 0;
     }
+
     .profilbild {
         top: 14vh;
         left: 8vw;
     }
+
     .formulär {
         top: 15vh;
         left: -7vw;
     }
+
     .bilder {
-        top: 0;
-        left: 5vw;
-    }
-    .bild3 {
+        display: flex;
+        margin-top: 16vh;
+        gap: 20px;
         width: 150px;
-        left: -5vw;
-        top: 16vh;
     }
-    .bild4 {
+    
+    .bild3,.bild4 {
         width: 150px;
-        left: 25vw;
-        bottom: 17vh;
     }
+
+    .bilder img {
+        display: flex;
+    }
+    
     .text2 {
         width: 350px;
         top: 16vh;
-        right: 10vw;
+        right: 12vw;
     }
+
     .familj {
         top: 16vh;
         right: 0;
     }
+    
     #bild5 {
         width: 320px;
     }
+    
     .text3 {
         top: 16vh;
         right: 7vw;
@@ -454,3 +416,4 @@ p {
         height: 360px;
     }
 }
+    /* Responsivitet för surfplatta (ipad air) */
