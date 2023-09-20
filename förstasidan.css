@@ -170,7 +170,7 @@ label {
 
 /* --------------Bakgrundsida------------- */
 
-/* Div som används i bakgrund- och intressesida.
+/* Div .bilder som används i bakgrund- och intressesida.
    Använder flex för att lätt flytta bilderna 
    samt att dom blir responsiva. */
 .bilder {
@@ -210,7 +210,7 @@ span {
     background-color: rgb(107, 107, 105);
     opacity: 80%;
     position: relative;
-    top: 25%;
+    top: 12vh;
     right: 15%;
     overflow: scroll;    
 }
@@ -231,7 +231,7 @@ span {
     background-color: rgb(107, 107, 105);
     opacity: 80%;
     position: relative;
-    top: 25%;
+    top: 12vh;
     right: 15%;
     overflow: scroll;
 }
@@ -247,6 +247,7 @@ span {
     width: 400px;
     height: 370px;
     opacity: 80%;
+    border-radius: 30px;
 }
 
 .lista2 {
@@ -294,7 +295,6 @@ span {
         left: -1em;
     }
 
-    
     .bild2 {
         width: 100%;
         height: 300px;
@@ -303,7 +303,7 @@ span {
     
     .formulär {
         grid-area: main;
-        top: 15vh;
+        top: 10vh;
         left: -3em;
         width: 300px;
     }
@@ -316,15 +316,11 @@ span {
     .bilder {
         grid-area: main;
         display: block;
-        margin-top: 2vh;
+        margin-top: 4vh;
         gap: 20px;   
         margin-left: -2vw; 
     }
 
-    .bild3 {
-        margin-left: 1%;
-    }
-    
     .bild4 {
         top: 3vh;
     }
@@ -335,12 +331,12 @@ span {
         margin-left: -9vw;
         width: 320px;
         height: 700px;
-        margin-top: -15vh;
+        top: 5vh;
     }
 
     .familj {
         grid-area: main;
-        left: -3em;
+        left: -14vw;
     }
 
     #bild5 {
