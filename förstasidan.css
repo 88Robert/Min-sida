@@ -38,10 +38,8 @@ h1 {
 }
 a {
     font-family: "Audiowide", sans-serif;
-    color:  rgb(139, 244, 244);    
-}
-a:hover {
-    color: black;
+    color:  rgb(139, 244, 244);  
+    font-size: large;  
 }
 
 nav {
@@ -274,6 +272,11 @@ span {
         "footer footer footer";
     }
 
+/* medvetet val att inte använda hamburgarmeny, gör större text istället */
+    a {
+        font-size: x-large;
+    }
+
     .profilbild {
         grid-area: main;
         left: 0;
@@ -306,10 +309,12 @@ span {
         top: 10vh;
         left: -3em;
         width: 300px;
+        padding-left: 65px;
+        padding-top: 10px;
     }
 
     .label {
-        padding-left: -8em;
+        padding-left: -100px;
     }
 
     /* Medvetet att bilderna är mindre. använder block för lodrätt placering */
@@ -367,6 +372,11 @@ span {
     .introtext {
         top: 15vh;
         left: -2vw;    
+    }
+
+    /* medvetet val att inte använda hamburgarmeny, gör större text istället */
+    a {
+        font-size: x-large;
     }
 
     .main {
