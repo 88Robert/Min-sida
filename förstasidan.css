@@ -436,3 +436,13 @@ span {
     }
 }
     /*-- Responsivitet för surfplatta (ipad air)-- */
+
+   /*  
+   Generella kommentarer. 
+   
+    Jag använder class-attribut som ska användas till flera olika
+    element, och id attribut som ska användas till ett element. 
+    I responsivitet för mobil har jag medvetet valt att vissa bilder
+    ska vara mindre då jag tycker det såg bättre ut. 
+    Jag har även valt att använda större text på nav länkarna för 
+    smidigare justering, samt att jag tyckte det blev bra.  */
